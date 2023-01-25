@@ -161,10 +161,77 @@ footer p{
     color: #1B2021;
 }
 
-
-
-
+/*sobre mi*/
+.gustos p{
+    color: #E7F5EA;
+}
+#grilla-mi{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#gustos{
+    grid-area: gustos;
+}
+#video{
+    grid-area: video;
+}
+#foot{
+    grid-area: footer;
+}
+#otros{
+    grid-area: aside;
+}
+@media (min-width: 768px){
+    #grilla-mi{
+        display: grid;
+        grid-template-areas:
+        "gustos aside"
+        "video aside"
+        "footer footer";
+        grid-template-rows: repeat(1,1fr); 
+        grid-template-columns: 3fr 1fr;
+        justify-items: center;
+    }
+}
 
 
 
 /*contacto*/
+#marco{
+    background-color: #1B2021;
+    height: 50rem;
+    width: 80rem;
+}
+#marco p{
+    color: #E7F5EA;
+}
+.button-neon a{
+    text-decoration: none;
+    color:#E7F5EA;
+}
+.button-neon {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3d43b4 , 0 0 70px #3d43b4 , 0 0 80px #3d43b4 , 0 0 100px #3d43b4 ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.button-neon:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #1afe49 , 0 0 70px #1afe49 , 0 0 80px #1afe49 , 0 0 100px #1afe49 ;
+}
+
