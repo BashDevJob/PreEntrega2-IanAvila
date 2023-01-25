@@ -1,0 +1,170 @@
+body{ 
+    background-image: linear-gradient(to bottom,#1B2021, #227c39fd ,#02661bfd);
+    font-family:'Montserrat', sans-serif;
+}
+h1, h2{
+    color: white;
+}
+.nav-link{
+    color: #E7F5EA;
+}
+.navbar-nav .nav-link.active{
+    color: #60f180;
+}
+.navbar-brand{
+    color: #E7F5EA;
+}
+.navbar-toggler{
+    background-color: #21bb48fd;
+}
+
+/*textos*/
+#presentar{
+    color: #E7F5EA;
+}
+#presentarCarr{
+        color: #E7F5EA;
+}
+
+/*cards*/
+.padre-cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.card img{
+    height: 150px;
+}
+/*tablet*/
+@media (min-width: 768px){
+    .padre-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+/*desktop*/
+@media (min-width: 992px){
+    .padre-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #carouselExample{
+        max-width: 40rem;
+        gap: 20px
+    }
+    #carouselExample div img{
+        height: 600px;
+        width: 400px;
+    }
+}
+/*big desktop*/
+@media (min-width: 1200px){
+    .padre-cards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px
+    }
+    #carouselExample{
+        max-width: 60rem;
+    }
+}
+
+/*carrusel*/
+#carouselExample div img{
+    height: 400px;
+    width: 300px;
+}
+
+/*footer*/
+footer p{
+    color: #E7F5EA;
+}
+
+/*tecnologias*/
+.onbording p{
+    color: #E7F5EA;
+}
+/*grilla*/
+#grilla-tec{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#html {
+    grid-area: html;
+}
+#css {
+    grid-area: css;
+}
+#git {
+    grid-area: git;     
+}
+#github {
+    grid-area: github;     
+}
+#boot {
+    grid-area: boot;
+}
+#js{
+    grid-area: js;
+}
+#react.js{
+    grid-area: react;
+}
+#node{
+    grid-area: node;
+}
+#mongo{
+    grid-area: mongo;
+}
+#sql{
+    grid-area: sql;
+}
+#python{
+    grid-area: python;
+}
+@media (min-width: 768px){
+    #grilla-tec{
+        display: grid;
+        grid-template-areas:
+        "html css"
+        "git github"
+        "boot js"
+        "react node"
+        "mongo sql"
+        "python .";
+        grid-template-rows: repeat(5,1fr); 
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+@media (min-width: 998px){
+    #grilla-tec{
+        display: grid;
+        grid-template-areas:
+            "html css git"
+            "github boot boot"
+            "js react node"
+            "mongo sql python";
+            grid-template-rows: repeat(4,1fr); 
+            grid-template-columns: repeat(3 ,1fr);
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            gap: 1rem;
+            margin: 5rem;
+            justify-items:unset;
+    }
+}
+/*si es posible en esta parte una devolucion en la que recomienden algo para que quede todo de un tamaño similar? no se si editando por defeceto el tamaño de los div pueda ser.*/
+.card p{
+    color: #1B2021;
+}
+
+
+
+
+
+
+
+/*contacto*/
