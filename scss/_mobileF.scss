@@ -1,0 +1,41 @@
+
+/*cards*/
+.padre-cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.card img{
+    height: 150px;
+}
+
+/*carrusel*/
+#carouselExample div img{
+    height: 400px;
+    width: 300px;
+}
+
+/*sobre mi*/
+.gustos p{
+    color: #E7F5EA;
+}
+
+#grilla-mi{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#gustos{
+    grid-area: gustos;
+}
+#video{
+    grid-area: video;
+}
+#foot{
+    grid-area: footer;
+}
+#otros{
+    grid-area: aside;
+}

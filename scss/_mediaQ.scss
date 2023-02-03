@@ -1,0 +1,47 @@
+/*--Cards--*/
+/*tablet*/
+@media (min-width: 768px){
+    .padre-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+/*desktop*/
+@media (min-width: 992px){
+    .padre-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #carouselExample{
+        max-width: 40rem;
+        gap: 20px
+    }
+    #carouselExample div img{
+        height: 600px;
+        width: 400px;
+    }
+}
+/*big desktop*/
+@media (min-width: 1200px){
+    .padre-cards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px
+    }
+    #carouselExample{
+        max-width: 60rem;
+    }
+}
+
+/*--Sobre mi--*/
+@media (min-width: 768px){
+    #grilla-mi{
+        display: grid;
+        grid-template-areas:
+        "gustos aside"
+        "video aside"
+        "footer footer";
+        grid-template-rows: repeat(1,1fr); 
+        grid-template-columns: 3fr 1fr;
+        justify-items: center;
+    }
+}

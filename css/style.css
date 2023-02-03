@@ -12,6 +12,63 @@ h1, h2 {
 footer p {
   color: #E7F5EA; }
 
+/*textos*/
+#presentar {
+  color: #E7F5EA; }
+
+#presentarCarr {
+  color: #E7F5EA; }
+
+/*--Nav--*/
+.nav-link {
+  color: #E7F5EA; }
+
+.navbar-nav .nav-link.active {
+  color: #60f180; }
+
+.navbar-brand {
+  color: #E7F5EA; }
+
+.navbar-toggler {
+  background-color: #21bb48fd; }
+
+/*cards*/
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+
+.card img {
+  height: 150px; }
+
+/*carrusel*/
+#carouselExample div img {
+  height: 400px;
+  width: 300px; }
+
+/*sobre mi*/
+.gustos p {
+  color: #E7F5EA; }
+
+#grilla-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+
+#gustos {
+  grid-area: gustos; }
+
+#video {
+  grid-area: video; }
+
+#foot {
+  grid-area: footer; }
+
+#otros {
+  grid-area: aside; }
+
 /*--Tecnologias--*/
 .onbording p {
   color: #E7F5EA; }
@@ -79,7 +136,6 @@ footer p {
 .card p {
   color: #1B2021; }
 
-/* Import */
 /*section*/
 #redes {
   border-radius: 1%;
@@ -149,35 +205,7 @@ footer p {
 .social ul li.linkedin a:hover {
   background: #1c66c2; }
 
-.nav-link {
-  color: #E7F5EA; }
-
-.navbar-nav .nav-link.active {
-  color: #60f180; }
-
-.navbar-brand {
-  color: #E7F5EA; }
-
-.navbar-toggler {
-  background-color: #21bb48fd; }
-
-/*textos*/
-#presentar {
-  color: #E7F5EA; }
-
-#presentarCarr {
-  color: #E7F5EA; }
-
-/*cards*/
-.padre-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px; }
-
-.card img {
-  height: 150px; }
-
+/*--Cards--*/
 /*tablet*/
 @media (min-width: 768px) {
   .padre-cards {
@@ -204,33 +232,7 @@ footer p {
   #carouselExample {
     max-width: 60rem; } }
 
-/*carrusel*/
-#carouselExample div img {
-  height: 400px;
-  width: 300px; }
-
-/*sobre mi*/
-.gustos p {
-  color: #E7F5EA; }
-
-#grilla-mi {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px; }
-
-#gustos {
-  grid-area: gustos; }
-
-#video {
-  grid-area: video; }
-
-#foot {
-  grid-area: footer; }
-
-#otros {
-  grid-area: aside; }
-
+/*--Sobre mi--*/
 @media (min-width: 768px) {
   #grilla-mi {
     display: grid;
