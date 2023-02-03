@@ -1,0 +1,79 @@
+/*--Tecnologias--*/
+.onbording p{
+    color: #E7F5EA;
+}
+/*grilla*/
+#grilla-tec{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#html {
+    grid-area: html;
+}
+#css {
+    grid-area: css;
+}
+#git {
+    grid-area: git;     
+}
+#github {
+    grid-area: github;     
+}
+#boot {
+    grid-area: boot;
+}
+#js{
+    grid-area: js;
+}
+#react.js{
+    grid-area: react;
+}
+#node{
+    grid-area: node;
+}
+#mongo{
+    grid-area: mongo;
+}
+#sql{
+    grid-area: sql;
+}
+#python{
+    grid-area: python;
+}
+@media (min-width: 768px){
+    #grilla-tec{
+        display: grid;
+        grid-template-areas:
+        "html css"
+        "git github"
+        "boot js"
+        "react node"
+        "mongo sql"
+        "python .";
+        grid-template-rows: repeat(5,1fr); 
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+@media (min-width: 998px){
+    #grilla-tec{
+        display: grid;
+        grid-template-areas:
+            "html css git"
+            "github boot boot"
+            "js react node"
+            "mongo sql python";
+            grid-template-rows: repeat(4,1fr); 
+            grid-template-columns: repeat(3 ,1fr);
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            gap: 1rem;
+            margin: 5rem;
+            justify-items:unset;
+    }
+}
+.card p{
+    color: #1B2021;
+}

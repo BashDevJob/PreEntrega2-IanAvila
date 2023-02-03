@@ -1,237 +1,240 @@
-body{ 
-    background-image: linear-gradient(to bottom,#1B2021, #227c39fd ,#02661bfd);
-    font-family:'Montserrat', sans-serif;
-}
-h1, h2{
-    color: white;
-}
-.nav-link{
-    color: #E7F5EA;
-}
-.navbar-nav .nav-link.active{
-    color: #60f180;
-}
-.navbar-brand{
-    color: #E7F5EA;
-}
-.navbar-toggler{
-    background-color: #21bb48fd;
-}
+/*--Import--*/
+/*--Generales--*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+body {
+  background-image: linear-gradient(to bottom, #1B2021, #227c39fd, #02661bfd);
+  font-family: 'Montserrat', sans-serif; }
+
+h1, h2 {
+  color: white; }
+
+footer p {
+  color: #E7F5EA; }
+
+/*--Tecnologias--*/
+.onbording p {
+  color: #E7F5EA; }
+
+/*grilla*/
+#grilla-tec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+
+#html {
+  grid-area: html; }
+
+#css {
+  grid-area: css; }
+
+#git {
+  grid-area: git; }
+
+#github {
+  grid-area: github; }
+
+#boot {
+  grid-area: boot; }
+
+#js {
+  grid-area: js; }
+
+#react.js {
+  grid-area: react; }
+
+#node {
+  grid-area: node; }
+
+#mongo {
+  grid-area: mongo; }
+
+#sql {
+  grid-area: sql; }
+
+#python {
+  grid-area: python; }
+
+@media (min-width: 768px) {
+  #grilla-tec {
+    display: grid;
+    grid-template-areas: "html css" "git github" "boot js" "react node" "mongo sql" "python .";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; } }
+
+@media (min-width: 998px) {
+  #grilla-tec {
+    display: grid;
+    grid-template-areas: "html css git" "github boot boot" "js react node" "mongo sql python";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    gap: 1rem;
+    margin: 5rem;
+    justify-items: unset; } }
+
+.card p {
+  color: #1B2021; }
+
+/* Import */
+/*section*/
+#redes {
+  border-radius: 1%;
+  background-color: #72858c;
+  margin: 1rem; }
+
+.social ul {
+  position: relative;
+  left: 50%;
+  margin-left: -216px;
+  list-style: none;
+  color: #000; }
+
+.social ul li {
+  float: left; }
+
+.social ul li a {
+  position: relative;
+  float: left;
+  background: #87fc70;
+  width: 3rem;
+  height: 4rem;
+  text-align: center;
+  color: #000;
+  padding: 0 0 30px 0; }
+
+.social ul li a:hover {
+  color: #fff; }
+
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
+  padding: 10px 0 0 0; }
+
+/* Pseudo Elements */
+.social ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  border: 24px solid transparent;
+  border-bottom: 24px solid;
+  z-index: 0; }
+
+/* Hover */
+.social ul li.facebook a:hover {
+  background: #3b5998; }
+
+.social ul li.twitter a:hover {
+  background: #44ccf6; }
+
+.social ul li.youtube a:hover {
+  background: #da2d2e; }
+
+.social ul li.instagram a:hover {
+  background: #66269e; }
+
+.social ul li.pinterest a:hover {
+  background: #c3042b; }
+
+.social ul li.github a:hover {
+  background: #000000; }
+
+.social ul li.flickr a:hover {
+  background: #72858c; }
+
+.social ul li.linkedin a:hover {
+  background: #1c66c2; }
+
+.nav-link {
+  color: #E7F5EA; }
+
+.navbar-nav .nav-link.active {
+  color: #60f180; }
+
+.navbar-brand {
+  color: #E7F5EA; }
+
+.navbar-toggler {
+  background-color: #21bb48fd; }
 
 /*textos*/
-#presentar{
-    color: #E7F5EA;
-}
-#presentarCarr{
-        color: #E7F5EA;
-}
+#presentar {
+  color: #E7F5EA; }
+
+#presentarCarr {
+  color: #E7F5EA; }
 
 /*cards*/
-.padre-cards{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-.card img{
-    height: 150px;
-}
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+
+.card img {
+  height: 150px; }
+
 /*tablet*/
-@media (min-width: 768px){
-    .padre-cards{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-}
+@media (min-width: 768px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; } }
+
 /*desktop*/
-@media (min-width: 992px){
-    .padre-cards{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    #carouselExample{
-        max-width: 40rem;
-        gap: 20px
-    }
-    #carouselExample div img{
-        height: 600px;
-        width: 400px;
-    }
-}
+@media (min-width: 992px) {
+  .padre-cards {
+    grid-template-columns: repeat(3, 1fr); }
+  #carouselExample {
+    max-width: 40rem;
+    gap: 20px; }
+  #carouselExample div img {
+    height: 600px;
+    width: 400px; } }
+
 /*big desktop*/
-@media (min-width: 1200px){
-    .padre-cards{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px
-    }
-    #carouselExample{
-        max-width: 60rem;
-    }
-}
+@media (min-width: 1200px) {
+  .padre-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; }
+  #carouselExample {
+    max-width: 60rem; } }
 
 /*carrusel*/
-#carouselExample div img{
-    height: 400px;
-    width: 300px;
-}
-
-/*footer*/
-footer p{
-    color: #E7F5EA;
-}
-
-/*tecnologias*/
-.onbording p{
-    color: #E7F5EA;
-}
-/*grilla*/
-#grilla-tec{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-#html {
-    grid-area: html;
-}
-#css {
-    grid-area: css;
-}
-#git {
-    grid-area: git;     
-}
-#github {
-    grid-area: github;     
-}
-#boot {
-    grid-area: boot;
-}
-#js{
-    grid-area: js;
-}
-#react.js{
-    grid-area: react;
-}
-#node{
-    grid-area: node;
-}
-#mongo{
-    grid-area: mongo;
-}
-#sql{
-    grid-area: sql;
-}
-#python{
-    grid-area: python;
-}
-@media (min-width: 768px){
-    #grilla-tec{
-        display: grid;
-        grid-template-areas:
-        "html css"
-        "git github"
-        "boot js"
-        "react node"
-        "mongo sql"
-        "python .";
-        grid-template-rows: repeat(5,1fr); 
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-}
-@media (min-width: 998px){
-    #grilla-tec{
-        display: grid;
-        grid-template-areas:
-            "html css git"
-            "github boot boot"
-            "js react node"
-            "mongo sql python";
-            grid-template-rows: repeat(4,1fr); 
-            grid-template-columns: repeat(3 ,1fr);
-            grid-row-gap: 5px;
-            grid-column-gap: 5px;
-            gap: 1rem;
-            margin: 5rem;
-            justify-items:unset;
-    }
-}
-/*si es posible en esta parte una devolucion en la que recomienden algo para que quede todo de un tamaño similar? no se si editando por defeceto el tamaño de los div pueda ser.*/
-.card p{
-    color: #1B2021;
-}
+#carouselExample div img {
+  height: 400px;
+  width: 300px; }
 
 /*sobre mi*/
-.gustos p{
-    color: #E7F5EA;
-}
-#grilla-mi{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-#gustos{
-    grid-area: gustos;
-}
-#video{
-    grid-area: video;
-}
-#foot{
-    grid-area: footer;
-}
-#otros{
-    grid-area: aside;
-}
-@media (min-width: 768px){
-    #grilla-mi{
-        display: grid;
-        grid-template-areas:
-        "gustos aside"
-        "video aside"
-        "footer footer";
-        grid-template-rows: repeat(1,1fr); 
-        grid-template-columns: 3fr 1fr;
-        justify-items: center;
-    }
-}
+.gustos p {
+  color: #E7F5EA; }
 
+#grilla-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
 
+#gustos {
+  grid-area: gustos; }
 
-/*contacto*/
-#marco{
-    background-color: #1B2021;
-    height: 50rem;
-    width: 80rem;
-}
-#marco p{
-    color: #E7F5EA;
-}
-.button-neon a{
-    text-decoration: none;
-    color:#E7F5EA;
-}
-.button-neon {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px;
-    border: none;
-    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
-    color: rgba(255,255,255,1);
-    text-decoration: normal;
-    text-align: center;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    white-space: pre;
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3d43b4 , 0 0 70px #3d43b4 , 0 0 80px #3d43b4 , 0 0 100px #3d43b4 ;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-}
-.button-neon:hover {
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #1afe49 , 0 0 70px #1afe49 , 0 0 80px #1afe49 , 0 0 100px #1afe49 ;
-}
+#video {
+  grid-area: video; }
 
+#foot {
+  grid-area: footer; }
+
+#otros {
+  grid-area: aside; }
+
+@media (min-width: 768px) {
+  #grilla-mi {
+    display: grid;
+    grid-template-areas: "gustos aside" "video aside" "footer footer";
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 3fr 1fr;
+    justify-items: center; } }

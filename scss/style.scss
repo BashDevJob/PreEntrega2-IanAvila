@@ -1,0 +1,108 @@
+/*--Import--*/
+@import "generales";
+@import "tecnologias";
+@import "contacto";
+.nav-link{
+    color: #E7F5EA;
+}
+.navbar-nav .nav-link.active{
+    color: #60f180;
+}
+.navbar-brand{
+    color: #E7F5EA;
+}
+.navbar-toggler{
+    background-color: #21bb48fd;
+}
+
+/*textos*/
+#presentar{
+    color: #E7F5EA;
+}
+#presentarCarr{
+        color: #E7F5EA;
+}
+
+/*cards*/
+.padre-cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.card img{
+    height: 150px;
+}
+/*tablet*/
+@media (min-width: 768px){
+    .padre-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+/*desktop*/
+@media (min-width: 992px){
+    .padre-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #carouselExample{
+        max-width: 40rem;
+        gap: 20px
+    }
+    #carouselExample div img{
+        height: 600px;
+        width: 400px;
+    }
+}
+/*big desktop*/
+@media (min-width: 1200px){
+    .padre-cards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px
+    }
+    #carouselExample{
+        max-width: 60rem;
+    }
+}
+
+/*carrusel*/
+#carouselExample div img{
+    height: 400px;
+    width: 300px;
+}
+
+/*sobre mi*/
+.gustos p{
+    color: #E7F5EA;
+}
+#grilla-mi{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#gustos{
+    grid-area: gustos;
+}
+#video{
+    grid-area: video;
+}
+#foot{
+    grid-area: footer;
+}
+#otros{
+    grid-area: aside;
+}
+@media (min-width: 768px){
+    #grilla-mi{
+        display: grid;
+        grid-template-areas:
+        "gustos aside"
+        "video aside"
+        "footer footer";
+        grid-template-rows: repeat(1,1fr); 
+        grid-template-columns: 3fr 1fr;
+        justify-items: center;
+    }
+}
