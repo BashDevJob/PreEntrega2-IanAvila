@@ -12,6 +12,18 @@ h1, h2 {
 footer p {
   color: #E7F5EA; }
 
+/*--Sobre Mi--*/
+.conten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(142, 230, 134, 0.342); }
+
+.conten h2, p, iframe {
+  width: 75%; }
+
 /*textos*/
 #presentar {
   color: #E7F5EA; }
@@ -116,7 +128,12 @@ footer p {
 @media (min-width: 768px) {
   #grilla-tec {
     display: grid;
-    grid-template-areas: "html css" "git github" "boot js" "react node" "mongo sql" "python .";
+    grid-template-areas: "html css"
+ "git github"
+ "boot js"
+ "react node"
+ "mongo sql"
+ "python .";
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-items: center; } }
@@ -124,7 +141,10 @@ footer p {
 @media (min-width: 998px) {
   #grilla-tec {
     display: grid;
-    grid-template-areas: "html css git" "github boot boot" "js react node" "mongo sql python";
+    grid-template-areas: "html css git"
+ "github boot boot"
+ "js react node"
+ "mongo sql python";
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 5px;
@@ -232,11 +252,14 @@ footer p {
   #carouselExample {
     max-width: 60rem; } }
 
-/*--Sobre mi--*/
+/*--Sobre Mi--*/
 @media (min-width: 768px) {
   #grilla-mi {
     display: grid;
-    grid-template-areas: "gustos aside" "video aside" "footer footer";
+    grid-template-areas: "gustos aside"
+ "video aside"
+ "footer footer";
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: 3fr 1fr;
-    justify-items: center; } }
+    justify-items: center;
+    padding: 2rem; } }

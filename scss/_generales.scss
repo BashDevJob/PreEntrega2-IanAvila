@@ -9,3 +9,15 @@ h1, h2{
 footer p{
     color: #E7F5EA;
 }
+/*--Sobre Mi--*/
+.conten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(142, 230, 134, 0.452);
+}
+.conten h2, p, iframe {
+    width: 75%;
+}

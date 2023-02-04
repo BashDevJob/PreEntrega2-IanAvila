@@ -32,7 +32,7 @@
     }
 }
 
-/*--Sobre mi--*/
+/*--Sobre Mi--*/
 @media (min-width: 768px){
     #grilla-mi{
         display: grid;
@@ -43,5 +43,6 @@
         grid-template-rows: repeat(1,1fr); 
         grid-template-columns: 3fr 1fr;
         justify-items: center;
+        padding: 2rem;
     }
 }
